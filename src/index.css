@@ -124,4 +124,20 @@
       box-shadow: none !important;
     }
   }
+  
+  /* PDF-specific optimizations */
+  .pdf-optimized {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+  
+  .pdf-optimized * {
+    background: white !important;
+    border-color: #e5e7eb !important;
+  }
+  
+  .pdf-optimized .resume-gradient {
+    background: white !important;
+  }
 }

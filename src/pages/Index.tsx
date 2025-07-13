@@ -5,11 +5,14 @@ import SkillsSection from '@/components/resume/SkillsSection';
 import CertificationsSection from '@/components/resume/CertificationsSection';
 import ProfileSection from '@/components/resume/ProfileSection';
 import WorkExperienceSection from '@/components/resume/WorkExperienceSection';
+import DownloadButton from '@/components/resume/DownloadButton';
 
 const Index = () => {
   return (
     <div className="min-h-screen resume-gradient print-friendly">
-      <div className="max-w-7xl mx-auto">
+      <DownloadButton />
+      
+      <div id="resume-content" className="max-w-7xl mx-auto">
         <ResumeHeader />
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
