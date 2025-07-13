@@ -18,12 +18,21 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'resume-blue': 'hsl(var(--resume-blue))',
+				'resume-accent': 'hsl(var(--resume-accent))',
+				'resume-text': 'hsl(var(--resume-text))',
+				'resume-text-light': 'hsl(var(--resume-text-light))',
+				'resume-border': 'hsl(var(--resume-border))',
+				'resume-section': 'hsl(var(--resume-section))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

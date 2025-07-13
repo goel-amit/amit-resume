@@ -1,11 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import ResumeHeader from '@/components/resume/ResumeHeader';
+import ContactSection from '@/components/resume/ContactSection';
+import EducationSection from '@/components/resume/EducationSection';
+import SkillsSection from '@/components/resume/SkillsSection';
+import CertificationsSection from '@/components/resume/CertificationsSection';
+import ProfileSection from '@/components/resume/ProfileSection';
+import WorkExperienceSection from '@/components/resume/WorkExperienceSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen resume-gradient print-friendly">
+      <div className="max-w-7xl mx-auto">
+        <ResumeHeader />
+        
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
+          {/* Left Sidebar */}
+          <div className="lg:col-span-1 space-y-6">
+            <ContactSection />
+            <EducationSection />
+            <SkillsSection />
+            <CertificationsSection />
+          </div>
+          
+          {/* Right Content */}
+          <div className="lg:col-span-2 space-y-6">
+            <ProfileSection />
+            <WorkExperienceSection />
+          </div>
+        </div>
       </div>
     </div>
   );
