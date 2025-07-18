@@ -1,11 +1,13 @@
-import ResumeHeader from '@/components/resume/ResumeHeader';
-import ContactSection from '@/components/resume/ContactSection';
-import EducationSection from '@/components/resume/EducationSection';
-import SkillsSection from '@/components/resume/SkillsSection';
-import CertificationsSection from '@/components/resume/CertificationsSection';
-import ProfileSection from '@/components/resume/ProfileSection';
-import WorkExperienceSection from '@/components/resume/WorkExperienceSection';
-import DownloadButton from '@/components/resume/DownloadButton';
+import {
+  ResumeHeader,
+  ContactSection,
+  EducationSection,
+  SkillsSection,
+  CertificationsSection,
+  ProfileSection,
+  WorkExperienceSection,
+  DownloadButton,
+} from '@/features/resume';
 
 const Index = () => {
   return (
