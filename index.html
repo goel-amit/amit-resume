@@ -1,24 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mac-snap-it-now</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Goel - Software Engineer</title>
+    <meta name="description" content="Professional Resume - Amit Goel, Software Engineer">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="download-btn" class="download-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7,10 12,15 17,10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download PDF
+        </button>
+        
+        <div id="resume-content" class="resume">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="name">Amit Goel</h1>
+                <h2 class="title">Software Engineer</h2>
+                <div class="contact-info">
+                    Hyderabad, India | +91-9041777452 | goelamit756@gmail.com | www.linkedin.com/in/ag0909
+                </div>
+            </header>
 
-    <meta property="og:title" content="mac-snap-it-now" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+            <!-- Summary -->
+            <section class="section">
+                <h3 class="section-title">Summary</h3>
+                <p class="summary-text">
+                    Software Developer specializing in .NET, React, and microservices architecture, with a track record of delivering 
+                    high-quality, scalable backend solutions. Experienced in SQL, MongoDB, and integrating complex applications 
+                    with third-party services. Strong focus on system performance, code maintainability, and automated testing. 
+                    Known for leadership in cross-functional teams, problem-solving, and driving timely project delivery in fast-paced 
+                    environments.
+                </p>
+            </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+            <!-- Skills -->
+            <section class="section">
+                <h3 class="section-title">Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <strong>Languages/Frameworks:</strong> .NET Core, ASP.NET MVC, React, JavaScript, Angular, Java
+                    </div>
+                    <div class="skill-category">
+                        <strong>Databases:</strong> SQL Server, MongoDB
+                    </div>
+                    <div class="skill-category">
+                        <strong>Cloud & DevOps:</strong> AWS (S3, EC2, Lambda), Kafka, Service Fabric
+                    </div>
+                    <div class="skill-category">
+                        <strong>Tools:</strong> Git, JIRA, NUnit, Moq
+                    </div>
+                </div>
+            </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+            <!-- Work Experience -->
+            <section class="section">
+                <h3 class="section-title">Work Experience</h3>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <h4 class="job-title">Software Engineer, Mirabel Technologies | Hyderabad</h4>
+                        </div>
+                        <div class="job-period">Oct 2023 - Present</div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Built a scalable subscription platform using <strong>ASP.NET Core, React,</strong> and <strong>SQL Server,</strong> supporting complex billing (Fixed, Usage-Based, Hybrid); improved processing by <strong>30%,</strong> reduced deadlocks by <strong>70%.</strong></li>
+                        <li>Designed a complete <strong>user roles</strong> and <strong>approval system;</strong> led secure implementation of order workflow, streamlining controlled proposal generation.</li>
+                        <li>Integrated third-party APIs with <strong>OAuth;</strong> automated content generation using <strong>OpenAI</strong> and implemented <strong>CDC</strong> for real-time workflow tracking.</li>
+                        <li>Deployed AWS services <strong>(S3, EC2, Lambda)</strong> for paywall and content delivery; used Kafka to reduce processing latency by <strong>50%.</strong></li>
+                        <li>Resolved security vulnerabilities, optimized .NET/React modules, and mentored team; practiced <strong>Agile XP</strong> and tracked delivery with <strong>JIRA.</strong></li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <h4 class="job-title">Engineer, Indus Valley Partners | Noida, India</h4>
+                        </div>
+                        <div class="job-period">Jun 2022 - Oct 2023</div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Integrated enterprise systems for 5+ clients, enabling seamless data exchange and smooth onboarding.</li>
+                        <li>Built responsive interfaces in <strong>.NET (MVC/Core)</strong> and <strong>JavaScript,</strong> improving client satisfaction by <strong>20%.</strong></li>
+                        <li>Automated reporting via <strong>.NET console apps,</strong> saving approx. <strong>8 hours/week</strong> for ops team.</li>
+                        <li>Developed core modules using <strong>SOLID</strong> principles and <strong>Entity Framework.</strong></li>
+                        <li>Improved unit testing with <strong>NUnit & Moq,</strong> reduced post-release bugs by <strong>30%.</strong></li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <h4 class="job-title">System Engineer & Trainee, Infosys | Bengaluru, India</h4>
+                        </div>
+                        <div class="job-period">Feb 2020 - Jun 2022</div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Led a team of 2 to manage a centralized component system used by 90+ teams, ensuring data integrity and collaboration.</li>
+                        <li>Developed a microservices-based batch mailing system on <strong>Service Fabric</strong> to automate email approvals.</li>
+                        <li>Migrated a complaint portal from <strong>.NET/JavaScript</strong> to <strong>Angular</strong> with Java-based APIs for better performance.</li>
+                        <li>Built stored procedures and batch jobs, reducing memory usage by <strong>40%</strong> and increasing processing speed by <strong>30%.</strong></li>
+                        <li>Delivered applications using <strong>MEAN Stack, Java, Spring Boot, REST APIs,</strong> and <strong>WCF</strong> for scalable solutions.</li>
+                        <li>Deployed and managed services on <strong>Linux,</strong> ensuring stable and secure operations.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="section">
+                <h3 class="section-title">Education</h3>
+                <div class="education">
+                    <div class="education-header">
+                        <div class="education-title">
+                            <h4>Chitkara University | Punjab, India</h4>
+                            <p>Bachelor Of Engineering, Computer Science and Technology.</p>
+                        </div>
+                        <div class="education-period">
+                            <div>2016 - 2020</div>
+                            <div><strong>CGPA: 8.79</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="section">
+                <h3 class="section-title">Certifications</h3>
+                <ul class="certifications">
+                    <li>AWS Certified Cloud Practitioner - Coursera</li>
+                    <li>Development with React - Coursera</li>
+                    <li>Development with React Native - Coursera</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
