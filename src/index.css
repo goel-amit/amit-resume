@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Download Button */
+.download-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.download-button:hover {
+    background: #1d4ed8;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+    transform: translateY(-1px);
+}
+
+.download-button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Resume Container */
+.resume {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 1rem;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    font-size: 0.95rem;
+    color: #4b5563;
+    font-weight: 400;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3b82f6;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #1d4ed8;
+}
+
+/* Summary */
+.summary-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #374151;
+    text-align: justify;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.skill-category {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.skill-category strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* Work Experience */
+.job {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.job:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.job-period {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+    white-space: nowrap;
+    background: #f3f4f6;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.job-responsibilities {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.job-responsibilities li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #374151;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.job-responsibilities li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.job-responsibilities li strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* Education */
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.education-title h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 0.5rem 0;
+}
+
+.education-title p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+.education-period {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* Certifications */
+.certifications {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.certifications li {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: #374151;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.certifications li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .download-button {
+        display: none !important;
+    }
+    
+    .container {
+        padding: 0;
+        margin: 0;
+        max-width: none;
+    }
+    
+    .resume {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 1rem;
+    }
+    
+    .name {
+        font-size: 24pt;
+    }
+    
+    .title {
+        font-size: 14pt;
+    }
+    
+    .section-title {
+        font-size: 16pt;
+    }
+    
+    .job {
+        page-break-inside: avoid;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .resume {
+        padding: 1.5rem;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+    }
+    
+    .contact-info {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .job-period {
+        align-self: flex-start;
+    }
+    
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .download-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        top: auto;
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume {
+        padding: 1rem;
+    }
+    
+    .name {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
